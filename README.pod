@@ -1,4 +1,4 @@
-=head1 Config::Model::Krbs - Edit and velidate Kerberos configuration 
+=head1 Config::Model::Krb5 - Edit and velidate Kerberos configuration 
 
 Config-Model-Krb5 is a description of the structure and constraints of
 of Kerberos configuration.
@@ -28,23 +28,20 @@ Here's a short list of what needs to be done:
 
 =item *
 
-create the required file for a Perl distribution (i.e write a Makefile.PL or
-a Build.PL or use Dist::Zilla. For the latter, you can re-use the dist.ini
-from config-model-openssh)
+Create the required file for a Perl distribution (i.e write a
+Makefile.PL or a Build.PL or use L<Dist::Zilla>. For the latter, you
+can re-use the dist.ini from config-model-openssh)
 
 =item *
 
-may be refresh the model (in this case, you should use config-model-edit 
-command from config-model-itself to  edit and verify the model)
+May be refresh the model (in this case, you should use
+L<config-model-edit> command from L<Config::Model::Itself> to edit and
+verify the model)
 
 =item *
 
-test that the model is accurate
-
-=item *
-
-add non-regression tests in t/ directory (using Config::Model::Tester is 
-recommended)
+Add non-regression tests in t/ directory (using
+L<Config::Model::Tester> is recommended)
 
 =item *
 
