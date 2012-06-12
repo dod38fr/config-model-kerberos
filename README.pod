@@ -1,0 +1,57 @@
+=head1 Config::Model::Krbs - Edit and velidate Kerberos configuration 
+
+Config-Model-Krb5 is a description of the structure and constraints of
+of Kerberos configuration.
+
+The description is located in the files under lib/Config/Model/models.
+This description can be loaded by L<Config::Model> to create a
+configuration tree. (i.e. a set of objects to hold Kerberos
+configuration data)
+
+The file lib/Config/Model/Krb5.pm contains code to load Kerberos
+configuration data from config file into the configuration tree and
+then to write back configuration data.
+
+=head1 Author
+
+This code was originally written by Peter Knowles and is licensed with
+LGPL-2.1 (or more). Unfortunately, his priorities have changed and
+Peter is no longer interested  in maintaining Config-Model-Krb5. He
+kindly agreed to let me publish the code in the hope that another
+maintainer will step up.
+
+=head1 TODO
+
+Here's a short list of what needs to be done:
+
+=over 
+
+=item *
+
+create the required file for a Perl distribution (i.e write a Makefile.PL or
+a Build.PL or use Dist::Zilla. For the latter, you can re-use the dist.ini
+from config-model-openssh)
+
+=item *
+
+may be refresh the model (in this case, you should use config-model-edit 
+command from config-model-itself to  edit and verify the model)
+
+=item *
+
+test that the model is accurate
+
+=item *
+
+add non-regression tests in t/ directory (using Config::Model::Tester is 
+recommended)
+
+=item *
+
+publish it on CPAN
+
+=back
+
+Feel free to contact config-model author to get help on this task.
+
+
