@@ -30,20 +30,23 @@ Here's a short list of what needs to be done:
 
 Create the required files for a Perl distribution (i.e write a
 Makefile.PL or a Build.PL or use L<Dist::Zilla>. For the latter, you
-can re-use the dist.ini from config-model-openssh)
+can re-use the [dist.ini from config-model-openssh](https://github.com/dod38fr/config-model-openssh/blob/master/dist.ini)
 
 =item *
 
 May be refresh the model (in this case, you should use
-L<config-model-edit> command from L<Config::Model::Itself> to edit and
+L<cme> with L<Config::Model::Itself> to edit and
 verify the model), I.e., after cloning this repo, run:
 
- config-model-edit -model Krb5
+ cme meta edit
+
+On Debian, run `apt install cme libconfig-model-itself-perl
+libconfig-model-tester-perl` to install the required packages.
 
 =item *
 
 Add non-regression tests in t/ directory. Using
-L<Config::Model::Tester> is recommended. See the simple test case done for openssh in 
+L<Config::Model::Tester> is recommended. See the test cases done for openssh in 
 https://github.com/dod38fr/config-model-openssh/tree/master/t/model_tests.d
 
 =item *
