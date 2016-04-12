@@ -28,9 +28,10 @@ Here's a short list of what needs to be done:
 
 =item *
 
-Create the required files for a Perl distribution (i.e write a
+Create the required files for a Perl distribution, i.e write a
 Makefile.PL or a Build.PL or use L<Dist::Zilla>. For the latter, you
-can re-use the [dist.ini from config-model-openssh](https://github.com/dod38fr/config-model-openssh/blob/master/dist.ini)
+can re-use the
+L<dist.ini from config-model-openssh|https://github.com/dod38fr/config-model-openssh/blob/master/dist.ini>.
 
 =item *
 
@@ -40,14 +41,16 @@ verify the model), I.e., after cloning this repo, run:
 
  cme meta edit
 
-On Debian, run `apt install cme libconfig-model-itself-perl
-libconfig-model-tester-perl` to install the required packages.
+On Debian, run
+ apt install cme libconfig-model-itself-perl libconfig-model-tester-perl
+
+to install the required packages.
 
 =item *
 
 Add non-regression tests in t/ directory. Using
 L<Config::Model::Tester> is recommended. See the test cases done for openssh in 
-https://github.com/dod38fr/config-model-openssh/tree/master/t/model_tests.d
+L<https://github.com/dod38fr/config-model-openssh/tree/master/t/model_tests.d>
 
 =item *
 
